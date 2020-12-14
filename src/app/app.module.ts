@@ -1,11 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LayoutModule } from '@progress/kendo-angular-layout';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {LayoutModule} from '@progress/kendo-angular-layout';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ToolBarModule} from '@progress/kendo-angular-toolbar';
 
 
 @NgModule({
@@ -16,7 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ToolBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
