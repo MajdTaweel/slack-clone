@@ -1,0 +1,8 @@
+<kendo-splitter [orientation]="orientation">
+  <kendo-splitter-pane *ngFor="let pane of splitterPanes; let i = index"
+                       [ngClass]="pane.className"
+                       [size]="pane.size"
+                       [min]="pane.min">
+    <ng-container *ngTemplateOutlet="pane.templateRef"></ng-container>
+  </kendo-splitter-pane>
+</kendo-splitter>

@@ -1,0 +1,13 @@
+kendo-splitter {
+  border: none;
+  height: 100%;
+
+  kendo-splitter-pane {
+    height: 100%;
+  }
+
+  ::ng-deep kendo-splitter-bar {
+    background-color: white;
+    color: white;
+  }
+}
