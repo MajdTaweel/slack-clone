@@ -1,12 +1,19 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {ToolbarComponent} from './toolbar/toolbar.component';
+import {ToolbarBaseComponent} from './toolbar-base/toolbar-base.component';
+import {ToolBarModule} from '@progress/kendo-angular-toolbar';
 
 
 @NgModule({
-  declarations: [ToolbarComponent],
+  declarations: [
+    ToolbarBaseComponent,
+  ],
+  exports: [
+    ToolbarBaseComponent,
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    ToolBarModule,
   ]
 })
 export class SharedModule {
