@@ -11,13 +11,27 @@
 kendo-treeview {
   color: white !important;
   background-color: $primary !important;
-  padding: 16px !important;
+  padding: 8px 16px !important;
+  overflow: visible !important;
 }
 
 button[kendoButton] {
   justify-content: start;
   width: 100%;
   color: white !important;
+
+  &.btn-side-bar-header {
+    height: 36px;
+    min-width: 36px;
+    justify-content: center;
+    color: $primary !important;
+    background-color: white !important;
+  }
+
+  &.btn-ph-3 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .text-white {
@@ -33,10 +47,6 @@ header.side-nav-header > div {
   border-bottom: rgba(200, 200, 200, 0.75) 1px solid;
 }
 
-button[kendoButton].btn-side-bar-header {
-  height: 36px;
-  width: 36px;
-  justify-content: center;
-  color: $primary !important;
-  background-color: white !important;
+::ng-deep kendo-treeview > ul li {
+  margin-bottom: 8px !important;
 }
