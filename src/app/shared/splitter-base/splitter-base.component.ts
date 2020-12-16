@@ -1,6 +1,6 @@
 import {Component, ContentChildren, Input, OnInit, QueryList, TemplateRef} from '@angular/core';
 import {Orientation} from '@progress/kendo-angular-layout';
-import {SplitterPaneBaseComponent} from '../splitter-pane-base/splitter-pane-base.component';
+import {SplitterPaneBaseComponent} from './splitter-pane-base/splitter-pane-base.component';
 
 export interface Pane {
   size?: string;
