@@ -1,0 +1,30 @@
+<header class="side-nav-header k-pb-2">
+  <div class="k-d-flex k-pl-3 k-pr-3 k-pt-1 k-pb-1 k-justify-content-between k-align-items-center text-white">
+    <h4 class="font-weight-900 k-text-ellipsis">Workspace name</h4>
+    <button kendoButton look="flat" class="btn-circle btn-side-bar-header" icon="calendar"></button>
+  </div>
+</header>
+
+<button kendoButton look="clear" icon="calendar">All DMs</button>
+<button kendoButton look="clear" icon="calendar">More</button>
+
+<kendo-treeview
+  [nodes]="data"
+  textField="text"
+  kendoTreeViewExpandable
+  kendoTreeViewSelectable
+  kendoTreeViewHierarchyBinding
+  childrenField="items"
+>
+  <ng-template kendoTreeViewNodeTemplate let-item>
+    <ng-container [ngSwitch]="item.type">
+      <div class="k-d-flex" *ngSwitchCase="'channel'">
+        <div>#</div>
+        <div class="k-pl-2"></div>
+        <div>{{ item.text }}</div>
+      </div>
+
+      <span *ngSwitchDefault>{{ item.text }}</span>
+    </ng-container>
+  </ng-template>
+</kendo-treeview>
