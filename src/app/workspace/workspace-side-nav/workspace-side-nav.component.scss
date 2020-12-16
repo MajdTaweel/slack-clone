@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/dist/all.scss";
 
-* {
+:not(.k-icon) {
   font-family: sans-serif !important;
 }
 
