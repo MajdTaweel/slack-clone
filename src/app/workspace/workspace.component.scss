@@ -5,3 +5,47 @@
 app-splitter-base {
   height: 100%;
 }
+
+button[kendoButton].btn-app-bar {
+  width: 26px !important;
+  height: 26px !important;
+  color: white;
+  .k-icon {
+    font-size: 20px !important;
+  }
+}
+
+kendo-textbox.search-app-bar {
+  height: 24px;
+  width: 320px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+
+  ::ng-deep input {
+    height: inherit;
+    width: inherit;
+    &::placeholder {
+      color: white;
+    }
+  }
+}
+
+app-appbar-section-base {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-app-bar {
+  width: 28px;
+  max-width: 28px;
+  height: 28px;
+  max-height: 28px;
+  // TODO: Temp values, remove!
+  background-color: #F6F6F6;
+  color: #FF6358;
+
+  & {
+    justify-self: end;
+  }
+}

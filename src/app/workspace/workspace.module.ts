@@ -7,6 +7,9 @@ import {SharedModule} from '../shared/shared.module';
 import {WorkspaceSideNavComponent} from './workspace-side-nav/workspace-side-nav.component';
 import {TreeViewModule} from '@progress/kendo-angular-treeview';
 import {ButtonModule} from '@progress/kendo-angular-buttons';
+import {TextBoxModule} from '@progress/kendo-angular-inputs';
+import {AvatarModule} from '@progress/kendo-angular-layout';
+import {TooltipModule} from '@progress/kendo-angular-tooltip';
 
 
 @NgModule({
@@ -20,6 +23,9 @@ import {ButtonModule} from '@progress/kendo-angular-buttons';
     SharedModule,
     TreeViewModule,
     ButtonModule,
+    TextBoxModule,
+    AvatarModule,
+    TooltipModule,
   ]
 })
 export class WorkspaceModule {

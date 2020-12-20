@@ -9,6 +9,9 @@ import {ToolBarModule} from '@progress/kendo-angular-toolbar';
 import {TreeViewModule} from '@progress/kendo-angular-treeview';
 import {IconsModule} from '@progress/kendo-angular-icons';
 import {NavigationModule} from '@progress/kendo-angular-navigation';
+import {InputsModule} from '@progress/kendo-angular-inputs';
+import { TooltipModule } from '@progress/kendo-angular-tooltip';
+
 
 
 @NgModule({
@@ -22,6 +25,8 @@ import {NavigationModule} from '@progress/kendo-angular-navigation';
     TreeViewModule,
     IconsModule,
     NavigationModule,
+    InputsModule,
+    TooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

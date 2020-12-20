@@ -1,18 +1,30 @@
 <div class="k-d-flex k-d-flex-col hv-100">
   <app-appbar-base>
+    <app-appbar-spacer-base></app-appbar-spacer-base>
+
+    <app-appbar-section-base kendoTooltip>
+      <button kendoButton look="clear" icon="clock" class="btn-app-bar" title="AA"></button>
+    </app-appbar-section-base>
+
+    <app-appbar-spacer-base width="32px"></app-appbar-spacer-base>
+
+    <app-appbar-section-base>
+      <kendo-textbox placeholder="Search Workspace name" class="search-app-bar"></kendo-textbox>
+    </app-appbar-section-base>
+
+    <app-appbar-spacer-base width="32px"></app-appbar-spacer-base>
+
+    <app-appbar-section-base>
+      <button kendoButton look="clear" icon="help" class="btn-app-bar"></button>
+    </app-appbar-section-base>
+
+    <app-appbar-spacer-base></app-appbar-spacer-base>
+
+    <app-appbar-section-base>
+      <kendo-avatar shape="rounded" initials="MT" class="avatar-app-bar"></kendo-avatar>
+    </app-appbar-section-base>
+
     <app-appbar-spacer-base width="16px"></app-appbar-spacer-base>
-
-    <app-appbar-section-base>
-      hello
-    </app-appbar-section-base>
-
-    <app-appbar-spacer-base width="32px"></app-appbar-spacer-base>
-
-    <app-appbar-section-base>
-      hello
-    </app-appbar-section-base>
-
-    <app-appbar-spacer-base width="32px"></app-appbar-spacer-base>
   </app-appbar-base>
 
   <app-splitter-base orientation="horizontal">
