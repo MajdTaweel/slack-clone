@@ -10,3 +10,22 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
+
+.tooltip-custom {
+  background-color: rgba($color: #000000, $alpha: 0.75);
+  border-radius: 8px;
+
+  *:not(.k-callout) {
+    border-radius: 8px;
+    background-color: rgba($color: #000000, $alpha: 0.75);
+  }
+
+  .k-callout {
+    background-color: transparent;
+    color: rgba($color: #000000, $alpha: 0.75);
+  }
+
+  .k-tooltip-content {
+    padding: 8px;
+  }
+}
