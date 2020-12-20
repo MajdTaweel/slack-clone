@@ -10,9 +10,14 @@ import { ButtonModule } from '@progress/kendo-angular-buttons';
 import { TextBoxModule } from '@progress/kendo-angular-inputs';
 import { AvatarModule } from '@progress/kendo-angular-layout';
 import { TooltipModule } from '@progress/kendo-angular-tooltip';
+import { WorkspaceHeaderComponent } from './workspace-header/workspace-header.component';
 
 @NgModule({
-  declarations: [WorkspaceComponent, WorkspaceSideNavComponent],
+  declarations: [
+    WorkspaceComponent,
+    WorkspaceSideNavComponent,
+    WorkspaceHeaderComponent,
+  ],
   imports: [
     CommonModule,
     WorkspaceRoutingModule,
