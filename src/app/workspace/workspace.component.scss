@@ -15,12 +15,13 @@ button[kendoButton].btn-app-bar {
   }
 }
 
-kendo-textbox.search-app-bar {
+button[kendoButton].btn-app-bar-search {
   height: 24px;
   width: 320px;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.25);
-  color: white;
+  background-color: rgb(67, 30, 68);
+  color: rgba($color: #ffffff, $alpha: 0.3);
+  justify-content: flex-start;
 
   ::ng-deep input {
     height: inherit;

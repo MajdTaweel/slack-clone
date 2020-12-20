@@ -1,9 +1,14 @@
 :host {
   height: 38px;
   padding: 0;
+  color: white !important;
+  background-color: #350d36;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
 
   kendo-appbar {
     height: inherit;
     padding: inherit;
+    color: inherit;
+    background-color: inherit;
   }
 }
