@@ -8,9 +8,8 @@ describe('WorkspaceSideNavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WorkspaceSideNavComponent ]
-    })
-    .compileComponents();
+      declarations: [WorkspaceSideNavComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

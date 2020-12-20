@@ -8,9 +8,8 @@ describe('AppBarSectionBaseComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AppBarSectionBaseComponent ]
-    })
-    .compileComponents();
+      declarations: [AppBarSectionBaseComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

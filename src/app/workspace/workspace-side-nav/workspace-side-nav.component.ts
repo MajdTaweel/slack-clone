@@ -1,9 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-workspace-side-nav',
   templateUrl: './workspace-side-nav.component.html',
-  styleUrls: ['./workspace-side-nav.component.scss']
+  styleUrls: ['./workspace-side-nav.component.scss'],
 })
 export class WorkspaceSideNavComponent implements OnInit {
   data = [
@@ -28,15 +28,12 @@ export class WorkspaceSideNavComponent implements OnInit {
         {
           text: 'why',
           type: 'dm',
-        }
+        },
       ],
     },
   ];
 
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

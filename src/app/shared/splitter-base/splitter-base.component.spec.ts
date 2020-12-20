@@ -8,9 +8,8 @@ describe('SplitterBaseComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SplitterBaseComponent ]
-    })
-    .compileComponents();
+      declarations: [SplitterBaseComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
